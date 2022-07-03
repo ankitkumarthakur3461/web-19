@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box{
+        width: 80%;
+        height:  50px;
+       
+        display: flex;
+        justify-content: space-between;
+      
+       margin: auto;
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      
+
+       }
+      #box1{
+        width: 20%;
+        height: 100%;
+       
+        margin-left: 50px;
+
+      }
+      #box1+div{
+           width: 40%;
+           height: 100%;
+        
+           display: flex;
+           justify-content: space-between;
+           margin-right: 80px;
+      }
+      #box1>img{
+        width:100%;
+      }
+      div>:first-child{
+        color: blue;
+      }
+      .box4{
+        width: 80%;
+        height:  500px;
+      
+        display: flex;
+        justify-content: space-between;
+       
+        margin: auto;
+      }
+
+      .box2{
+        width:40% ;
+        height: 480px;
+    
+        margin-left: 50px;
+        margin-top: 20px;
+       
+       
+
+      }
+      .box3{
+        display: flex;
+        width:40% ;
+        flex-wrap: wrap;
+        height: 480px;
+       
+        margin-top: 20px;
+        margin-right: 80px;
+        justify-content: space-between;
+        justify-content: space-around;
+       
+      }
+     .box2:nth-child(1){
+        color: black;
+     }
+     .box2>img{
+        width: 30%;
+        height: 20%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+     }
+     #a{
+        margin-left: 150px;
+        margin-top: -80px;
+       width: 50%;
+     }
+     .box3>div{
+        flex-basis: 40%;
+        height: 40%;
+      
+    
+       
+     
+        font-size: 12px;
+     }
+     .box3>div>img{
+        width: 40%;
+        border-radius: 100%;
+        
+       
+     }
+     .b{
+        width: 80%;
+        font-size: 13px;
+        margin-top: -2px;
+        color: black;
+     }
+     h2{
+        color: black;
+     }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="box1">
+            <img src="https://www.tcs.com/content/dam/tcs/images/Newtcslogo/tcs-logo-tata-white-1x-dec2021.png"/>
+        </div>
+        <div>
+            <p>Home</p>
+            <p>About</p>
+            <p>Course</p>
+            <p>instrutor</p>
+            <p>Blog</p>
+            <p>Contacts</p>
+        </div>
+    </div>
+    <div class="box4">
+    <div class="box2">
+       <p>WELCOME TO STUDYLAB</p>
+       <h1>We Are StudyLab An Online Learning Center</h1>
+       <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+
+        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+       <img src="https://www.tcs.com/content/dam/tcs/images/components-homepage/2022/spot-cdp.jpg" /><p id="a">Learn anything from StudyLab, Watch video</p>
+    </div>
+    <div class="box3">
+        <div>
+            <img src="https://cdn.storifyme.com/accounts/tcs/assets/80x80/f-51-696-928-91041651832459562.jpeg?1651834594000"
+       /> <h2>Top Quality Content</h2>
+          <p class="b">
+            A small river named Duden flows by their place and supplies</p> 
+        </div>
+        <div>
+            <img src="https://cdn.storifyme.com/accounts/tcs/assets/80x80/f-81-696-928-44161651832719780.jpeg?1651834550000" alt="">
+            <h2>Hight Skill Instrutor</h2>
+            <p class="b"> A small river named Duden flows by their place and supplies</p>
+        </div>
+        <div>
+            <img src="https://cdn.storifyme.com/accounts/tcs/assets/80x80/f-34-696-928-14501651831552698.jpeg?1651832077000" alt="">
+            <h2>World Class Quiz</h2>
+            <p class="b"> A small river named Duden flows by their place and supplies</p>
+        </div>
+        <div>
+            <img src=https://cdn.storifyme.com/accounts/tcs/assets/80x80/f-103-696-928-106621651832882961.jpeg?1651833955000" alt="">
+            <h2>Get Certified</h2>
+            <p class="b"> A small river named Duden flows by their place and supplies</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

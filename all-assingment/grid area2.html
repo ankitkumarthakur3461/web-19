@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            display: grid;
+            grid-template-columns: repeat(4,150px);
+            grid-template-rows: repeat(2,100px);
+            gap: 20px;
+            justify-content: center;
+            grid-template-areas:
+              "a a b e"
+              "c d b e";
+
+        }
+        #box>div{
+          
+            border-radius: 10px;
+            padding: 30px 20px;
+            color: white;
+            font-size: 35px;
+        }
+        #box>div:nth-child(1){
+            background-color: rgb(68, 67, 67);
+            grid-area: a;
+        }
+        #box>div:nth-child(2){
+            background-color: rgb(68, 67, 67);
+            grid-area: b;
+        }
+        #box>div:nth-child(3){
+            background-color:rgb(68, 67, 67);
+            grid-area: c;
+        }
+        #box>div:nth-child(4){
+            background-color: rgb(68, 67, 67);
+            grid-area: d;
+        }
+        #box>div:nth-child(5){
+            background-color: rgb(68, 67, 67);
+            grid-area: e;
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+</body>
+</html>

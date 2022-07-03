@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 30%;
+            text-align: center;
+           margin: auto;
+        }
+        h1+p{
+            width: 40%;
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+           
+        }
+        #box1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+            
+            text-align: center;
+        }
+        #box1>div{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #c{
+            color: green
+            ;
+        }
+        button{
+            background-color: white;
+            color: blue;
+            border-radius: 10px;
+        border: 1px solid blue;
+        padding: 10px 10px;
+        }
+     button:hover{
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        border: 0px solid;
+        padding: 10px 10px;
+     }
+     #a{
+        color: brown;
+     }
+     #b{
+        color:blue;
+     }
+     .p{
+        margin-top: 5px;
+     }
+     @media all and (min-width:481px) and (max-width:768px){
+        #box1{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;}
+            h1{
+            width: 60%;
+            
+        }
+        h1+p{
+            width: 80%;
+           
+
+     }}
+     @media all and (min-width:320px) and (max-width:480px){
+        #box1{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: auto;}
+            h1{
+            width: 80%;
+            
+        }
+        h1+p{
+            width: 130%;
+           
+
+     }.p{
+        text-align: center;
+     }
+    }
+    </style>
+
+</head>
+<body>
+    <h1>Choose a plan that right for your business</h1>
+    <p>We collect reviews from our users so you can get an honest opinion of what an
+        experience with our website are really like!</p>
+        <div id="box1">
+            <div>
+            <h2>Starter Plan</h2>
+            <h1 id="c">Free</h1>
+            <p class="p">Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+
+            <button>Book Now</button>
+
+
+            </div>
+            <div>
+                <h2>Business Plan</h2>
+                <h1 id="a">$39.00</h1>
+                <p class="p">Per month</p>
+                <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+    
+                <button>Book Now</button>
+            </div>
+            <div>
+                <h2>Premium Plan</h2>
+                <h1 id="b">$59.00</h1>
+                <p class="p">Per month</p>
+                <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+    
+                <button>Book Now</button>
+            </div>
+        </div>
+</body>
+</html>
